@@ -1,0 +1,6 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate', 'class': 'col-md-8 mx-auto'}}) }}
+    {{ form_row(form.title) }}
+    {{ form_row(form.author) }}
+    {{ form_row(form.content) }}
+    <button type="submit" class="btn btn-primary">{{ button_label|default('Créer') }}</button>
+{{ form_end(form) }}
